@@ -9,6 +9,16 @@
     "start": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
