@@ -1,15 +1,19 @@
 <template>
   <main class="container -home">
-    <Header msg="Welcome to Your Vue.js + TypeScript App" />
+    <Header />
+    <Card v-bind:value="10" />
   </main>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import Header from '@/components/header/index.vue';
+
+import Card from '@/components/card/card.vue';
+import Header from '@/components/header/header.vue';
 
 @Options({
   components: {
+    Card,
     Header,
   },
 })

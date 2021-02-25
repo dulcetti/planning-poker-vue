@@ -7,7 +7,7 @@
           <router-link to="/">Home</router-link>
         </li>
         <li class="item">
-          <router-link to="/about">About</router-link>
+          <router-link to="/play">Play</router-link>
         </li>
       </ul>
     </nav>
@@ -18,16 +18,11 @@
 import { Options, Vue } from 'vue-class-component';
 
 @Options({
-  props: {
-    msg: String,
-  },
+  props: {},
 })
-export default class Header extends Vue {
-  msg!: string;
-}
+export default class Header extends Vue {}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .header {
   > .nav {
