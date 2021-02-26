@@ -1,5 +1,5 @@
 <template>
-  <div class="card-container">
+  <div class="card">
     {{ value }}
   </div>
 </template>
@@ -18,31 +18,37 @@ export default class Card extends Vue {
 </script>
 
 <style scoped lang="scss">
-.card-container {
+.card {
   align-items: center;
-  background-color: #00a;
-  border: 1px solid #fff;
-  border-radius: 8px;
+  background-color: #2c3e50;
+  border: 5px solid #fff;
+  border-radius: 12px;
   color: #fff;
+  cursor: grab;
   display: flex;
   font-size: 4rem;
   height: 200px;
   justify-content: center;
+  margin: 0 auto;
   padding: 20px;
   position: relative;
   text-align: center;
   width: 140px;
 
+  &:active:hover {
+    cursor: grabbing;
+  }
+
   &:before {
-    border: 8px solid #fff;
-    border-radius: 10px;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 10px;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    bottom: -15px;
+    content: ' ';
+    left: -15px;
     position: absolute;
-    top: 10px;
-    width: 100%;
+    right: -15px;
+    top: -15px;
+    z-index: -1;
   }
 }
 </style>
