@@ -1,7 +1,10 @@
 <template>
   <header class="header">
     <nav class="nav">
-      <h1 class="brand">Planning Card Pocker</h1>
+      <h1 class="brand">
+        <span>Planning Card Pocker</span>
+        <strong>P<sup>2</sup></strong>
+      </h1>
       <ul class="menu">
         <li class="item">
           <router-link to="/">Home</router-link>

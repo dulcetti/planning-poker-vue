@@ -8,12 +8,18 @@
     max-width: 1280px;
 
     > .brand {
-      background: url('/img/logo-p.png') no-repeat;
+      align-items: center;
+      background: url('/img/logos/logo-p.png') no-repeat;
       color: #fff;
+      display: flex;
       height: 52px;
-      margin-right: 40px;
-      text-indent: -99999px;
-      width: 52px;
+      justify-content: flex-end;
+      margin-right: 20px;
+      width: 88px;
+
+      > span {
+        display: none;
+      }
     }
 
     > .menu {
