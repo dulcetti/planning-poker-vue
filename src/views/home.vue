@@ -1,5 +1,8 @@
 <template>
-  <main class="container -home"></main>
+  <main class="container -home">
+    <img src="/img/svgs/scrum.svg" alt="people playing cards on scrum" />
+    <img src="/img/svgs/playing-cards.svg" alt="people playing cards on scrum" />
+  </main>
 </template>
 
 <script lang="ts">
