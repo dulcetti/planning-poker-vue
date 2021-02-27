@@ -1,6 +1,21 @@
 <template>
+  <Header />
   <router-view />
+  <Footer />
 </template>
+
+<script lang="ts">
+import Header from '@/components/header/header.vue';
+import Footer from '@/components/footer/footer.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Footer,
+    Header,
+  },
+};
+</script>
 
 <style lang="scss">
 *,

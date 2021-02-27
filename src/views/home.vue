@@ -1,18 +1,15 @@
 <template>
   <main class="container -home">
-    <Header />
+    <img src="/img/svgs/scrum.svg" alt="people playing cards on scrum" />
+    <img src="/img/svgs/playing-cards.svg" alt="people playing cards on scrum" />
   </main>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-import Header from '@/components/header/header.vue';
-
 @Options({
-  components: {
-    Header,
-  },
+  components: {},
 })
 export default class Home extends Vue {}
 </script>
