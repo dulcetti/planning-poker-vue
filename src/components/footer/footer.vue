@@ -1,5 +1,9 @@
 <template>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <a href="https://www.freepik.com/vectors/background">
+      Background vector created by vectorpouch - www.freepik.com
+    </a>
+  </footer>
 </template>
 
 <script lang="ts">
