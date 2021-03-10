@@ -1,18 +1,17 @@
 <template>
   <main class="container -play">
-    <h1>Play this game</h1>
-    <Card v-bind:value="10" />
+    <CardsList />
   </main>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-import Card from '@/components/card/card.vue';
+import CardsList from '@/components/cards-list/cards-list.vue';
 
 @Options({
   components: {
-    Card,
+    CardsList,
   },
 })
 export default class Play extends Vue {}
