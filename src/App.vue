@@ -26,10 +26,14 @@ export default {
   padding: 0;
 }
 
+html,
+body {
+  min-height: 100vh;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  min-height: 100%;
 }
 
 article,
@@ -46,11 +50,21 @@ section,
 summary {
   display: block;
 }
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
 }
 </style>
