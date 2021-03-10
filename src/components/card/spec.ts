@@ -3,10 +3,10 @@ import Card from '@/components/card/card.vue';
 
 describe('<Card />', () => {
   it('should be render the component', () => {
-    const cardValue = '10';
+    const cardValue = 10;
     const wrapper = shallowMount(Card, {
-      props: { cardValue },
+      props: { value: cardValue },
     });
-    expect(wrapper.text()).toMatch(cardValue);
+    expect(wrapper.text()).toContain(cardValue);
   });
 });
