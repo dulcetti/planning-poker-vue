@@ -2,7 +2,7 @@
   <section class="wrapper-cards">
     <h1 class="title">Choose your Card:</h1>
     <ul class="cards-list">
-      <li v-for="value in values" v-bind:key="value">
+      <li v-for="value in values" v-bind:key="value" :class="{ choosed: value === selected }">
         <Card v-bind:value="value" />
       </li>
     </ul>
@@ -19,6 +19,9 @@ import Card from '@/components/card/card.vue';
     Card,
   },
   computed: {
+    selected() {
+      return createStore.state.selectedCard;
+    },
     values() {
       return createStore.state.cardValues;
     },

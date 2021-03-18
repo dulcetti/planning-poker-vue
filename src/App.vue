@@ -66,5 +66,6 @@ summary {
 .container {
   margin: 0 auto;
   max-width: 1220px;
+  padding: 30px;
 }
 </style>
