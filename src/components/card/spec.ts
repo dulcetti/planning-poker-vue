@@ -17,6 +17,8 @@ describe('<Card />', () => {
     });
     await wrapper.trigger('click');
     wrapper.vm.$emit('value', 10);
-    expect(wrapper.emitted().value).toEqual(10);
+
+    expect(wrapper.emitted().value).toBeTruthy();
+    expect(wrapper.emitted().value[0]).toEqual([10]);
   });
 });
