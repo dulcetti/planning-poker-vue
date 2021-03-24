@@ -1,5 +1,5 @@
 <template>
-  <div class="card" v-on:click="chooseCard(value)">
+  <div class="card" :class="{ choosed: value === selected }" v-on:click="chooseCard(value)">
     {{ value }}
   </div>
 </template>
@@ -11,6 +11,11 @@ import createStore from '@/store';
 @Options({
   props: {
     value: Number,
+  },
+  computed: {
+    selected() {
+      createStore.state.selectedCard;
+    },
   },
   methods: {
     chooseCard: (value: number) => {
