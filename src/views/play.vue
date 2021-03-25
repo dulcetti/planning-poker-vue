@@ -1,24 +1,20 @@
 <template>
   <main class="container -play">
     <CardsList />
-    Your card: <span v-if="selectedCard > 0">{{ selectedCard }}</span>
+    <SelectedCard />
   </main>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-import createStore from '@/store';
 import CardsList from '@/components/cards-list/cards-list.vue';
+import SelectedCard from '@/components/selected-card/selected-card.vue';
 
 @Options({
   components: {
     CardsList,
-  },
-  computed: {
-    selectedCard() {
-      return createStore.state.selectedCard;
-    },
+    SelectedCard,
   },
 })
 export default class Play extends Vue {}

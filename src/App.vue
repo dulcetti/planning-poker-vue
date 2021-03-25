@@ -64,8 +64,8 @@ summary {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1220px;
+  display: flex;
+  justify-content: space-around;
   padding: 30px;
 }
 </style>
