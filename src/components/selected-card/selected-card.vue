@@ -5,8 +5,18 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
+import createStore from '@/store';
+import Card from '@/components/card/card.vue';
+
 @Options({
-  props: {},
+  components: {
+    Card,
+  },
+  computed: {
+    selectedCard() {
+      return createStore.state.selectedCard;
+    },
+  },
 })
 export default class SelectedCard extends Vue {}
 </script>
