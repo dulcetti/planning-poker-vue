@@ -1,5 +1,8 @@
 <template>
-  <div class="selected-card"></div>
+  <div class="selected-card">
+    <h2 class="title">Your card:</h2>
+    <Card v-bind:value="selectedCard" v-if="selectedCard > 0"></Card>
+  </div>
 </template>
 
 <script lang="ts">
