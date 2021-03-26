@@ -8,4 +8,16 @@ describe('<SelectedCard />', () => {
 
     expect(wrapper.text()).toContain('Your card:');
   });
+
+  it('should be render the card selected by user', async () => {
+    const selectedValue = 100;
+    const wrapper = shallowMount(SelectedCard);
+    const cardWrapper = shallowMount(Card, {
+      props: { value: selectedValue },
+    });
+    await cardWrapper.trigger('click');
+    cardWrapper.vm.$emit('value', selectedValue);
+
+    expect(wrapper.text()).toContain(`Your card: ${selectedValue}`);
+  });
 });
