@@ -21,7 +21,7 @@
     "gen": "yarn plop --plopfile generators/plopfile.js",
     "lint": "vue-cli-service lint",
     "start": "vue-cli-service serve",
-    "test": "vue-cli-service test:unit --watchAll",
+    "test": "vue-cli-service test:unit --watchAll --coverage",
     "test:coverage": "vue-cli-service test:unit --coverage"
   },
   "dependencies": {
